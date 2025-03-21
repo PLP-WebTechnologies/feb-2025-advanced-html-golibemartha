@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding Planner</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url('https://images.pexels.com/photos/3091636/pexels-photo-3091636.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #0752dd;
+        }
+        
+        /* form {
+            margin-top: 20px;
+        } */
+        label {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #0752dd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome Future Groom and Bride</h1>
+    </header>
+    <p>Planning a wedding can be overwhelming and stressful, but you found the wedding planner page, with the right steps and resources, we will create the wedding of your dreams.</p> 
+
+    <section>
+        <h1>Your Perfect Day, Perfectly Planned</h1>
+    <ol type="I">
+        <li>Vision & Budget
+            <ul>
+                <li>Dream Consultation</li>
+                <li>Budget Planning</li>
+            </ul>
+        </li>
+        <li>Logistics & Vendors
+            <ul>
+                <li>Venue Selection</li>
+                <li>Vendor Coordination</li>
+                <li>Timeline & Guest List</li>
+            </ul>
+        </li>
+        <li>Design & Style
+            <ul>
+                <li>Theme & Decor</li>
+                <li>Color Palette</li>
+                <li>Ceremony & Reception</li>
+            </ul>
+        </li>
+        <li>Day-Of Management
+            <ul>
+                <li>On-Site Coordination</li>
+                <li>Problem Solving</li>
+                <li>Guest Support</li>
+            </ul>
+        </li>
+    </ol>
+    </section>
+
+    <section>
+        <h2>Inspiration</h2>
+        <img src="https://images.pexels.com/photos/2788494/pexels-photo-2788494.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beautiful wedding Venue" width="600" height="400" />
+    </section>
+
+    <section>
+        <h2>Our Pristine Vendor Team</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vendor Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Olaolu Events.</td>
+                    <td>12 Bakare Street, Ikeja, Lagos State.</td>
+                    <td>+234 801 234 678</td>
+                    <td>Event@fakemail.com</td>
+                </tr>
+                <tr>
+                    <td>Emeka Photography Pro</td>
+                    <td>23 Awolowo Road, Ikoyi, Lagos State.</td>
+                    <td>+234 802 345 689</td>
+                    <td>photo@fakemail.com</td>
+                </tr>
+                <tr>
+                    <td>Aisha Catering Services</td>
+                    <td>9 Saka Tinubu Street, Victoria Island, Lagos State.</td>
+                    <td>+234 803 456 780</td>
+                    <td>catering@fakemail.com</td>
+                </tr>
+                <tr>
+                    <td>Fuji Melody Band</td>
+                    <td>4 Allen Avenue, Ikeja, Lagos State.</td>
+                    <td>+234 804 567 801</td>
+                    <td>band@fakemail.com</td>
+                </tr>
+                <tr>
+                    <td>Funmi Flourist.</td>
+                    <td>7 Opebi Road, Ikeja, Lagos State</td>
+                    <td>+234 805 678 902</td>
+                    <td>flourist@fakemail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Take The Next Bold Step</h2>
+        <form action="/submit" method="POST">
+
+            <label for="groom_name">Groom's Full Name:</label>
+            <input type="text" id="groom_name" name="groom_name" placeholder="John Doe" required>
+            <br><br>
+
+            <label for="bride_name">Bride's Full Name:</label>
+            <input type="text" id="bride_name" name="bride_name" placeholder="Jane Doe" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="date">Wedding Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="venue">Wedding Venue:</label>
+            <select id="venue" name="venue" required>
+                    <option value="" disabled selected>Select a Venue</option>
+                    <option value="lagos_hotel">Lagos Oriental Hotel</option>
+                    <option value="balmoral_hall">Balmoral Hall</option>
+                    <option value="landmark_centre">Landmark Centre</option>
+                    <option value="federal_palace">Federal Palace Hotel</option>
+                    <option value="eko_hotel">Eko Hotel and Suites</option>
+            </select>
+            <br><br>
+
+            <label>Ceremony Type:</label>
+            <input type="radio" id="religious" name="ceremony_type" value="religious" required>
+            <label for="religious" >Religious</label>
+            <input type="radio" id="civil" name="ceremony_type" value="civil" required>
+            <label for="civil">Civil</label>
+            <input type="radio" id="custom" name="ceremony_type" value="custom" required>
+            <label for="custom">Custom</label>
+            <br><br>
+            
+            <label>Interests:</label>
+            <input type="checkbox" id="floral" name="interests" value="floral">
+            <label for="floral">Floral Arrangements</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music & Entertainment</label>
+            <input type="checkbox" id="catering" name="interests" value="catering">
+            <label for="catering">Catering</label>
+            <input type="checkbox" id="photography" name="interests" value="photography">
+            <label for="photography">Photography</label>
+            <input type="checkbox" id="decor" name="interests" value="decor">
+            <label for="decor">Decor</label>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Orji Golibe Martha</p>
+    </footer>
+
+</body>
+</html>
